@@ -3,15 +3,9 @@ public class Simulacao {
     public static void main(String[] args) {
         System.out.println("Simulação");
 
-        carro opala = new carro();
-        opala.ano = 76;
-        opala.modelo = "Comodoro";
-        opala.placa = "ACLR300";
-        opala.velocidade = 0;
+        carro opala = new carro("ACL300", "Comodoro", 75, 0);
 
-        radar radar = new radar();
-        radar.limiteVelocidade = 60;
-        radar.Localizacao = "Pistão Sul";
+        radar radar = new radar(60, "Pistão Sul");
 
         radar.avaliarVelocidade(opala);
 
